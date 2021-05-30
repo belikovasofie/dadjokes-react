@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './style.css';
 
-const Likes = ({ type }) => {
-  const [count, setCount] = useState(0);
+const Likes = ({ type, initialCount }) => {
+  const [count, setCount] = useState(initialCount);
   const handleClick = () => {
     setCount(count + 1);
   };
